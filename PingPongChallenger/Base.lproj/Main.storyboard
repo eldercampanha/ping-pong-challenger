@@ -144,7 +144,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T1p-SH-6f8">
                                 <rect key="frame" x="50" y="155" width="314" height="450"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq4-Lv-7jK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq4-Lv-7jK">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -159,7 +159,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-t1-SGi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-t1-SGi">
                                         <rect key="frame" x="0.0" y="100" width="314" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -171,7 +171,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxm-gh-SPQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxm-gh-SPQ">
                                         <rect key="frame" x="0.0" y="200" width="314" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -183,7 +183,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v23-iS-deR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v23-iS-deR">
                                         <rect key="frame" x="0.0" y="300" width="314" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -228,20 +228,48 @@
             </objects>
             <point key="canvasLocation" x="2525" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Who's the winner?-->
         <scene sceneID="Mez-Wi-A4l">
             <objects>
                 <viewController id="K08-he-PJV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDu-5v-QdI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="i6s-2j-Idj">
+                                <rect key="frame" x="50" y="326" width="314" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBd-Io-o4d">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="150"/>
+                                        <color key="backgroundColor" red="0.90257138010000004" green="0.68999415639999995" blue="0.37246787549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="zmo-Bh-qxP"/>
+                                        </constraints>
+                                        <state key="normal" title="Player A"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYd-cD-6ld">
+                                        <rect key="frame" x="0.0" y="200" width="314" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Player B"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i6s-2j-Idj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qa6-ZB-xFs" secondAttribute="top" constant="15" id="WXK-24-jac"/>
+                            <constraint firstItem="i6s-2j-Idj" firstAttribute="leading" secondItem="qa6-ZB-xFs" secondAttribute="leading" constant="50" id="h2e-pV-lsa"/>
+                            <constraint firstItem="i6s-2j-Idj" firstAttribute="centerY" secondItem="qa6-ZB-xFs" secondAttribute="centerY" id="kH0-Yv-CFd"/>
+                            <constraint firstItem="qa6-ZB-xFs" firstAttribute="trailing" secondItem="i6s-2j-Idj" secondAttribute="trailing" constant="50" id="nQi-WW-mS0"/>
+                            <constraint firstItem="qa6-ZB-xFs" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="i6s-2j-Idj" secondAttribute="bottom" constant="15" id="rYU-Wf-QxT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qa6-ZB-xFs"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Who's the winner?" id="dD1-S5-3hj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jla-hz-dFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3341" y="567"/>
+            <point key="canvasLocation" x="3390" y="571"/>
         </scene>
         <!--Who's the winner?-->
         <scene sceneID="2sG-Lc-68Z">
@@ -251,23 +279,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="iaN-0T-Ueg">
-                                <rect key="frame" x="50" y="240" width="314" height="350"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iaN-0T-Ueg">
+                                <rect key="frame" x="50" y="308" width="314" height="386"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player A, Player B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWM-Yl-EmU">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-yg-WbB">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="150"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="314" height="150"/>
                                         <color key="backgroundColor" red="0.90257138010000004" green="0.68999415639999995" blue="0.37246787549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="ffj-m2-PbT"/>
                                         </constraints>
                                         <state key="normal" title="Team A"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player C, Player D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5k-z0-Md6">
+                                        <rect key="frame" x="0.0" y="200.5" width="314" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4N-td-7hJ">
-                                        <rect key="frame" x="0.0" y="200" width="314" height="150"/>
+                                        <rect key="frame" x="0.0" y="236" width="314" height="150"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Team B"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="F4N-td-7hJ" firstAttribute="height" secondItem="bVM-yg-WbB" secondAttribute="height" id="gwc-3R-aaG"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -275,7 +318,8 @@
                             <constraint firstItem="0Aq-Hq-8My" firstAttribute="trailing" secondItem="iaN-0T-Ueg" secondAttribute="trailing" constant="50" id="68m-cS-TaL"/>
                             <constraint firstItem="iaN-0T-Ueg" firstAttribute="leading" secondItem="0Aq-Hq-8My" secondAttribute="leading" constant="50" id="D9m-2M-F1f"/>
                             <constraint firstItem="0Aq-Hq-8My" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iaN-0T-Ueg" secondAttribute="bottom" constant="100" id="XEm-EO-CiP"/>
-                            <constraint firstItem="iaN-0T-Ueg" firstAttribute="top" secondItem="0Aq-Hq-8My" secondAttribute="top" constant="100" id="YiY-ga-jtc"/>
+                            <constraint firstItem="iaN-0T-Ueg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0Aq-Hq-8My" secondAttribute="top" constant="15" id="YiY-ga-jtc"/>
+                            <constraint firstItem="iaN-0T-Ueg" firstAttribute="centerY" secondItem="0Aq-Hq-8My" secondAttribute="centerY" id="caw-jT-9d6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Aq-Hq-8My"/>
                     </view>
