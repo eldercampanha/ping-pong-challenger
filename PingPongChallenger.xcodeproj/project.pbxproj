@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B63FF6E22B305BC0084E8EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF6D22B305BC0084E8EF /* User.swift */; };
+		2B63FF7022B305C50084E8EF /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF6F22B305C50084E8EF /* Results.swift */; };
+		2B63FF7222B306240084E8EF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7122B306240084E8EF /* Result.swift */; };
+		2B63FF7422B3076E0084E8EF /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7322B3076E0084E8EF /* PlayersVC.swift */; };
+		2B63FF7622B307810084E8EF /* NumberOfPlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7522B307810084E8EF /* NumberOfPlayersVC.swift */; };
+		2B63FF7822B307A60084E8EF /* ResultSinglePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7722B307A60084E8EF /* ResultSinglePlayerVC.swift */; };
+		2B63FF7A22B307CA0084E8EF /* ResultTeamPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7922B307CA0084E8EF /* ResultTeamPlayerVC.swift */; };
 		2BB88AC622A9C9B600442594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB88AC522A9C9B600442594 /* AppDelegate.swift */; };
 		2BB88AC822A9C9B600442594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB88AC722A9C9B600442594 /* ViewController.swift */; };
 		2BB88ACB22A9C9B700442594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB88AC922A9C9B600442594 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B63FF6D22B305BC0084E8EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2B63FF6F22B305C50084E8EF /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		2B63FF7122B306240084E8EF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2B63FF7322B3076E0084E8EF /* PlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
+		2B63FF7522B307810084E8EF /* NumberOfPlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersVC.swift; sourceTree = "<group>"; };
+		2B63FF7722B307A60084E8EF /* ResultSinglePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSinglePlayerVC.swift; sourceTree = "<group>"; };
+		2B63FF7922B307CA0084E8EF /* ResultTeamPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTeamPlayerVC.swift; sourceTree = "<group>"; };
 		2BB88AC222A9C9B600442594 /* PingPongChallenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongChallenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB88AC522A9C9B600442594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB88AC722A9C9B600442594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +52,7 @@
 		2BB88AB922A9C9B600442594 = {
 			isa = PBXGroup;
 			children = (
+				2B63FF6F22B305C50084E8EF /* Results.swift */,
 				2BB88AC422A9C9B600442594 /* PingPongChallenger */,
 				2BB88AC322A9C9B600442594 /* Products */,
 			);
@@ -60,6 +75,12 @@
 				2BB88ACC22A9C9B800442594 /* Assets.xcassets */,
 				2BB88ACE22A9C9B800442594 /* LaunchScreen.storyboard */,
 				2BB88AD122A9C9B800442594 /* Info.plist */,
+				2B63FF6D22B305BC0084E8EF /* User.swift */,
+				2B63FF7122B306240084E8EF /* Result.swift */,
+				2B63FF7322B3076E0084E8EF /* PlayersVC.swift */,
+				2B63FF7522B307810084E8EF /* NumberOfPlayersVC.swift */,
+				2B63FF7722B307A60084E8EF /* ResultSinglePlayerVC.swift */,
+				2B63FF7922B307CA0084E8EF /* ResultTeamPlayerVC.swift */,
 			);
 			path = PingPongChallenger;
 			sourceTree = "<group>";
@@ -136,7 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB88AC822A9C9B600442594 /* ViewController.swift in Sources */,
+				2B63FF7A22B307CA0084E8EF /* ResultTeamPlayerVC.swift in Sources */,
+				2B63FF7422B3076E0084E8EF /* PlayersVC.swift in Sources */,
+				2B63FF7222B306240084E8EF /* Result.swift in Sources */,
 				2BB88AC622A9C9B600442594 /* AppDelegate.swift in Sources */,
+				2B63FF7822B307A60084E8EF /* ResultSinglePlayerVC.swift in Sources */,
+				2B63FF7622B307810084E8EF /* NumberOfPlayersVC.swift in Sources */,
+				2B63FF7022B305C50084E8EF /* Results.swift in Sources */,
+				2B63FF6E22B305BC0084E8EF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
