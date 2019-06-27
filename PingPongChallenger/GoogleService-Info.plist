@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>946732702575-ahra77tp9le4ruukvr90up02d8kag41p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.946732702575-ahra77tp9le4ruukvr90up02d8kag41p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDx6lFmquyfJiDQq8OwZbI26ubpt_DCV_g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>946732702575</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.createmusicgroup.PingPongChallenger</string>
+	<key>PROJECT_ID</key>
+	<string>pingpongchallenger-3805a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pingpongchallenger-3805a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:946732702575:ios:acdd293e21674d45</string>
+	<key>DATABASE_URL</key>
+	<string>https://pingpongchallenger-3805a.firebaseio.com</string>
+</dict>
+</plist>

@@ -8,37 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NumberOfPlayersVCProtocol {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var results: [Result] = []
+    var results: [String] = []
     var users: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let fakeResult = Result()
-        fakeResult.setScore(winner: "Steve", winnerScore: 5, loser: "Jeff", loserScore: 4)
-        self.results.append(fakeResult)
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func didFinishGame(_ winners: [String], losers: [String]){
         
-        if let vc = segue.destination as? NumberOfPlayersVC {
-            vc.delegate = self
-        }
-    
-    }
-    
-    func didFinishGame(_ users: [User], results: [Result]){
-        self.users.append(contentsOf: users)
-        self.results.append(contentsOf: results)
+        var newUsers: [User] = []
+        winners.forEach({ (name) in
+            if (self.users.contains(where: { (user) -> Bool in
+                return user.name == name
+            })) {
+                let user = User()
+                user.name = name
+                newUsers.append(user)
+            }
+        })
+        
+        self.users = users.map({
+            if winners.contains($0.name) {
+                $0.didWin()
+            }
+            if losers.contains($0.name) {
+                $0.didLoose()
+            }
+            return $0
+        })
+        
+        self.results.append("\(winners.toString()) won the match against \(losers.toString())")
         self.tableView.reloadData()
     }
     
@@ -57,11 +63,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let score =  self.results[indexPath.row].score
-        let date =  self.results[indexPath.row].date
         cell.textLabel?.numberOfLines = 2
-        cell.textLabel?.text = score
-        cell.detailTextLabel?.text = "at \(date)"
+        cell.textLabel?.text = self.results[indexPath.row]
+        cell.detailTextLabel?.text = "at \(Date().beauty())"
         
     }
     

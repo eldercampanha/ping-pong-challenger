@@ -147,7 +147,7 @@
         <!--Players-->
         <scene sceneID="6w3-0a-lrm">
             <objects>
-                <viewController id="28o-U6-S4Q" customClass="PlayersVC" customModule="PingPongChallenger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="28o-U6-S4Q" customClass="DoublePlayersVC" customModule="PingPongChallenger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="02v-wt-MeR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,93 +219,51 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="wW6-aJ-vtO">
                             <color key="tintColor" red="0.68410861489999997" green="0.92508637910000002" blue="0.93857687710000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="K08-he-PJV" kind="show" id="rG7-2N-q9X"/>
+                                <action selector="didTapNext:" destination="28o-U6-S4Q" id="UnT-h7-MGD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txtTeamAPlayerA" destination="t3z-CJ-tSS" id="p3l-ST-HJq"/>
+                        <outlet property="txtTeamAPlayerB" destination="16O-KN-m54" id="WhK-27-kBT"/>
+                        <outlet property="txtTeamBPlayerA" destination="yOZ-Cx-hGd" id="xl6-RA-f41"/>
+                        <outlet property="txtTeamBPlayerB" destination="hXs-vA-eXx" id="Bv7-wS-vro"/>
+                        <segue destination="m1C-mS-5Vl" kind="show" identifier="TeamPlayersToResult" id="d5K-Sc-yDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6q-vK-s8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2534.7826086956525" y="570.53571428571422"/>
         </scene>
         <!--Who's the winner?-->
-        <scene sceneID="Mez-Wi-A4l">
-            <objects>
-                <viewController id="K08-he-PJV" customClass="ResultSinglePlayerVC" customModule="PingPongChallenger" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LDu-5v-QdI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="i6s-2j-Idj">
-                                <rect key="frame" x="50" y="326" width="314" height="350"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBd-Io-o4d">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="150"/>
-                                        <color key="backgroundColor" red="0.90257138010000004" green="0.68999415639999995" blue="0.37246787549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="zmo-Bh-qxP"/>
-                                        </constraints>
-                                        <state key="normal" title="Player A"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYd-cD-6ld">
-                                        <rect key="frame" x="0.0" y="200" width="314" height="150"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Player B"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="i6s-2j-Idj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qa6-ZB-xFs" secondAttribute="top" constant="15" id="WXK-24-jac"/>
-                            <constraint firstItem="i6s-2j-Idj" firstAttribute="leading" secondItem="qa6-ZB-xFs" secondAttribute="leading" constant="50" id="h2e-pV-lsa"/>
-                            <constraint firstItem="i6s-2j-Idj" firstAttribute="centerY" secondItem="qa6-ZB-xFs" secondAttribute="centerY" id="kH0-Yv-CFd"/>
-                            <constraint firstItem="qa6-ZB-xFs" firstAttribute="trailing" secondItem="i6s-2j-Idj" secondAttribute="trailing" constant="50" id="nQi-WW-mS0"/>
-                            <constraint firstItem="qa6-ZB-xFs" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="i6s-2j-Idj" secondAttribute="bottom" constant="15" id="rYU-Wf-QxT"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="qa6-ZB-xFs"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Who's the winner?" id="dD1-S5-3hj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jla-hz-dFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3390" y="571"/>
-        </scene>
-        <!--Who's the winner?-->
         <scene sceneID="2sG-Lc-68Z">
             <objects>
-                <viewController id="m1C-mS-5Vl" customClass="ResultTeamPlayerVC" customModule="PingPongChallenger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m1C-mS-5Vl" customClass="ResultVC" customModule="PingPongChallenger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3e1-WY-7W7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iaN-0T-Ueg">
-                                <rect key="frame" x="50" y="308" width="314" height="386"/>
+                                <rect key="frame" x="50" y="343.5" width="314" height="315"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player A, Player B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWM-Yl-EmU">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-yg-WbB">
-                                        <rect key="frame" x="0.0" y="35.5" width="314" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="150"/>
                                         <color key="backgroundColor" red="0.90257138010000004" green="0.68999415639999995" blue="0.37246787549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="ffj-m2-PbT"/>
                                         </constraints>
                                         <state key="normal" title="Team A"/>
+                                        <connections>
+                                            <action selector="didTapTeamA:" destination="m1C-mS-5Vl" eventType="touchUpInside" id="Bxy-S1-FTM"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player C, Player D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5k-z0-Md6">
-                                        <rect key="frame" x="0.0" y="200.5" width="314" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4N-td-7hJ">
-                                        <rect key="frame" x="0.0" y="236" width="314" height="150"/>
+                                        <rect key="frame" x="0.0" y="165" width="314" height="150"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Team B"/>
+                                        <connections>
+                                            <action selector="didTapTeamB:" destination="m1C-mS-5Vl" eventType="touchUpInside" id="YAw-j7-MBg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -324,10 +282,14 @@
                         <viewLayoutGuide key="safeArea" id="0Aq-Hq-8My"/>
                     </view>
                     <navigationItem key="navigationItem" title="Who's the winner?" id="tIJ-sB-wud"/>
+                    <connections>
+                        <outlet property="btnTeamA" destination="bVM-yg-WbB" id="Gv9-RI-9TS"/>
+                        <outlet property="btnTeamB" destination="F4N-td-7hJ" id="ZD9-34-jST"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kg3-XM-FfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3389.8550724637685" y="-125.22321428571428"/>
+            <point key="canvasLocation" x="3630" y="58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RX7-hI-Pjd">
@@ -404,14 +366,22 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="UZP-sF-Nup">
                             <color key="tintColor" red="0.68410861489999997" green="0.92508637910000002" blue="0.93857687710000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="m1C-mS-5Vl" kind="show" id="5bS-dw-hGJ"/>
+                                <action selector="didTapNext:" destination="Vyf-ez-uy3" id="dN0-nH-4Zm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txtPalyerA" destination="oz3-t1-vNE" id="vVw-oP-sXt"/>
+                        <outlet property="txtPlayerB" destination="kWu-Av-BUJ" id="521-fB-AAv"/>
+                        <segue destination="m1C-mS-5Vl" kind="show" identifier="PlayersToResult" id="poU-9E-YiQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSR-Rs-vsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2536" y="-125"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="d5K-Sc-yDf"/>
+    </inferredMetricsTieBreakers>
 </document>

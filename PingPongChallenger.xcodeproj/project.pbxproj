@@ -12,13 +12,16 @@
 		2B63FF7222B306240084E8EF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7122B306240084E8EF /* Result.swift */; };
 		2B63FF7422B3076E0084E8EF /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7322B3076E0084E8EF /* PlayersVC.swift */; };
 		2B63FF7622B307810084E8EF /* NumberOfPlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7522B307810084E8EF /* NumberOfPlayersVC.swift */; };
-		2B63FF7822B307A60084E8EF /* ResultSinglePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7722B307A60084E8EF /* ResultSinglePlayerVC.swift */; };
-		2B63FF7A22B307CA0084E8EF /* ResultTeamPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7922B307CA0084E8EF /* ResultTeamPlayerVC.swift */; };
+		2B63FF7A22B307CA0084E8EF /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63FF7922B307CA0084E8EF /* ResultVC.swift */; };
 		2BB88AC622A9C9B600442594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB88AC522A9C9B600442594 /* AppDelegate.swift */; };
 		2BB88AC822A9C9B600442594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB88AC722A9C9B600442594 /* ViewController.swift */; };
 		2BB88ACB22A9C9B700442594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB88AC922A9C9B600442594 /* Main.storyboard */; };
 		2BB88ACD22A9C9B800442594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB88ACC22A9C9B800442594 /* Assets.xcassets */; };
 		2BB88AD022A9C9B800442594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB88ACE22A9C9B800442594 /* LaunchScreen.storyboard */; };
+		2BF4720E22C482EA009B9668 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF4720D22C482EA009B9668 /* FirebaseService.swift */; };
+		2BF4721022C4843D009B9668 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF4720F22C4843D009B9668 /* GoogleService-Info.plist */; };
+		2BF4721222C485E6009B9668 /* DoublePlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF4721122C485E6009B9668 /* DoublePlayersVC.swift */; };
+		2BF4721422C4908A009B9668 /* StringArray+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF4721322C4908A009B9668 /* StringArray+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,7 @@
 		2B63FF7122B306240084E8EF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2B63FF7322B3076E0084E8EF /* PlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
 		2B63FF7522B307810084E8EF /* NumberOfPlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersVC.swift; sourceTree = "<group>"; };
-		2B63FF7722B307A60084E8EF /* ResultSinglePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSinglePlayerVC.swift; sourceTree = "<group>"; };
-		2B63FF7922B307CA0084E8EF /* ResultTeamPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTeamPlayerVC.swift; sourceTree = "<group>"; };
+		2B63FF7922B307CA0084E8EF /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		2BB88AC222A9C9B600442594 /* PingPongChallenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongChallenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB88AC522A9C9B600442594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB88AC722A9C9B600442594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		2BB88ACC22A9C9B800442594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB88ACF22A9C9B800442594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BB88AD122A9C9B800442594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF4720D22C482EA009B9668 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		2BF4720F22C4843D009B9668 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2BF4721122C485E6009B9668 /* DoublePlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublePlayersVC.swift; sourceTree = "<group>"; };
+		2BF4721322C4908A009B9668 /* StringArray+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringArray+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		2BB88AC422A9C9B600442594 /* PingPongChallenger */ = {
 			isa = PBXGroup;
 			children = (
+				2BF4720F22C4843D009B9668 /* GoogleService-Info.plist */,
 				2BB88AC522A9C9B600442594 /* AppDelegate.swift */,
 				2BB88AC722A9C9B600442594 /* ViewController.swift */,
 				2BB88AC922A9C9B600442594 /* Main.storyboard */,
@@ -76,11 +83,13 @@
 				2BB88ACE22A9C9B800442594 /* LaunchScreen.storyboard */,
 				2BB88AD122A9C9B800442594 /* Info.plist */,
 				2B63FF6D22B305BC0084E8EF /* User.swift */,
+				2BF4721122C485E6009B9668 /* DoublePlayersVC.swift */,
 				2B63FF7122B306240084E8EF /* Result.swift */,
 				2B63FF7322B3076E0084E8EF /* PlayersVC.swift */,
 				2B63FF7522B307810084E8EF /* NumberOfPlayersVC.swift */,
-				2B63FF7722B307A60084E8EF /* ResultSinglePlayerVC.swift */,
-				2B63FF7922B307CA0084E8EF /* ResultTeamPlayerVC.swift */,
+				2B63FF7922B307CA0084E8EF /* ResultVC.swift */,
+				2BF4720D22C482EA009B9668 /* FirebaseService.swift */,
+				2BF4721322C4908A009B9668 /* StringArray+Utils.swift */,
 			);
 			path = PingPongChallenger;
 			sourceTree = "<group>";
@@ -144,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB88AD022A9C9B800442594 /* LaunchScreen.storyboard in Resources */,
+				2BF4721022C4843D009B9668 /* GoogleService-Info.plist in Resources */,
 				2BB88ACD22A9C9B800442594 /* Assets.xcassets in Resources */,
 				2BB88ACB22A9C9B700442594 /* Main.storyboard in Resources */,
 			);
@@ -157,11 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB88AC822A9C9B600442594 /* ViewController.swift in Sources */,
-				2B63FF7A22B307CA0084E8EF /* ResultTeamPlayerVC.swift in Sources */,
+				2B63FF7A22B307CA0084E8EF /* ResultVC.swift in Sources */,
 				2B63FF7422B3076E0084E8EF /* PlayersVC.swift in Sources */,
 				2B63FF7222B306240084E8EF /* Result.swift in Sources */,
 				2BB88AC622A9C9B600442594 /* AppDelegate.swift in Sources */,
-				2B63FF7822B307A60084E8EF /* ResultSinglePlayerVC.swift in Sources */,
+				2BF4721422C4908A009B9668 /* StringArray+Utils.swift in Sources */,
+				2BF4720E22C482EA009B9668 /* FirebaseService.swift in Sources */,
+				2BF4721222C485E6009B9668 /* DoublePlayersVC.swift in Sources */,
 				2B63FF7622B307810084E8EF /* NumberOfPlayersVC.swift in Sources */,
 				2B63FF7022B305C50084E8EF /* Results.swift in Sources */,
 				2B63FF6E22B305BC0084E8EF /* User.swift in Sources */,

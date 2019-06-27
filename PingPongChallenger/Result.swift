@@ -11,7 +11,7 @@ import Foundation
 class Result {
     var score: String = ""
     var date: String = ""
-    
+
     func setScore(winner: String, winnerScore: Int, loser: String, loserScore: Int) {
         score = "\(winner) \(winnerScore) vs \(loser) \(loserScore)"
         date = Date().beauty()

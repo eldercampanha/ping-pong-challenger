@@ -10,21 +10,29 @@ import UIKit
 
 class PlayersVC: UIViewController {
 
+    @IBOutlet weak var txtPalyerA: UITextField!
+    @IBOutlet weak var txtPlayerB: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    @IBAction func didTapNext(_ sender: Any) {
+        if txtPalyerA.text == "" {
+            return
+        }
+        if txtPlayerB.text == "" {
+            return
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        self.performSegue(withIdentifier: "PlayersToResult", sender: self)
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ResultVC {
+            vc.teamA = [txtPalyerA.text!]
+            vc.teamB = [txtPlayerB.text!]
+        }
+    }
 
 }
